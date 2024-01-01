@@ -4,14 +4,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.appcompat.widget.AppCompatSeekBar
+import android.widget.TimePicker
 import androidx.appcompat.widget.AppCompatSpinner
 import com.google.android.material.button.MaterialButton
 
 class AlarmFragment : Fragment() {
 
-    private lateinit var seekBarStartTime: AppCompatSeekBar
-    private lateinit var seekBarEndTime: AppCompatSeekBar
+    private lateinit var timePickerStartTime: TimePicker
+    private lateinit var timePickerEndTimePicker: TimePicker
     private lateinit var spinnerFrequency: AppCompatSpinner
     private lateinit var btnSetAlarm: MaterialButton
 
@@ -26,8 +26,8 @@ class AlarmFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         // Initialize your views using findViewById
-        seekBarStartTime = view.findViewById(R.id.seekBarStartTime)
-        seekBarEndTime = view.findViewById(R.id.seekBarEndTime)
+        timePickerStartTime = view.findViewById(R.id.timePickerStartTime)
+        timePickerEndTimePicker = view.findViewById(R.id.timePickerEndTime)
         spinnerFrequency = view.findViewById(R.id.spinnerFrequency)
         btnSetAlarm = view.findViewById(R.id.btnSetAlarm)
 

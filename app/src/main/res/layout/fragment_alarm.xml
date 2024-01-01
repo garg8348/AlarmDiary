@@ -6,27 +6,51 @@
     android:orientation="vertical"
     android:padding="16dp">
 
-    <!-- Time Range Sliders -->
-    <SeekBar
-        android:id="@+id/seekBarStartTime"
+    <!-- Start Time Input -->
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:max="720"
-        android:progress="480" />
+        android:orientation="horizontal">
 
-    <SeekBar
-        android:id="@+id/seekBarEndTime"
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Time: "
+            android:textSize="16sp" />
+
+        <TimePicker
+            android:id="@+id/timePickerStartTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <!-- End Time Input -->
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:max="720"
-        android:progress="960" />
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="End Time: "
+            android:textSize="16sp" />
+
+        <TimePicker
+            android:id="@+id/timePickerEndTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
 
     <!-- Frequency Options Spinner -->
     <Spinner
         android:id="@+id/spinnerFrequency"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp" />
+        android:layout_marginTop="16dp"
+        android:entries="@array/frequency_options" />
 
     <!-- Button to Set Alarm -->
     <Button
