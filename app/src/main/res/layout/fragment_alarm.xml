@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Time Range Sliders -->
+    <SeekBar
+        android:id="@+id/seekBarStartTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="720"
+        android:progress="480" />
+
+    <SeekBar
+        android:id="@+id/seekBarEndTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="720"
+        android:progress="960" />
+
+    <!-- Frequency Options Spinner -->
+    <Spinner
+        android:id="@+id/spinnerFrequency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp" />
+
+    <!-- Button to Set Alarm -->
+    <Button
+        android:id="@+id/btnSetAlarm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Set Alarm" />
+
+</LinearLayout>

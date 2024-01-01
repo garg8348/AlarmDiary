@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- CalendarView for selecting dates -->
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Task List Input for Upcoming Date -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextTaskList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Input task list for upcoming date" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Button to Save Task List -->
+    <Button
+        android:id="@+id/btnSaveTaskList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Save Task List" />
+
+    <!-- RecyclerView for displaying diary entries -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewDiary"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>
