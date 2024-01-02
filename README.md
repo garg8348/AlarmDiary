@@ -16,7 +16,7 @@ The AlarmDiary app is a simple and efficient tool designed to help you maintain 
 1. **Set Alarms:**
    - Navigate to the "Set Alarm" tab.
    - Specify your preferred alarm duration and frequency using intuitive sliders.
-   - Choose from different frequency options (30 minutes, 1 hour, 1 hour 30 minutes, 2 hours, 3 hours).
+   - Choose from different frequency options (1 hour, 1 hour 30 minutes, 2 hours, 3 hours).
 
 2. **Record Daily Activities:**
    - Upon alarm activation, a notification will remind you to add your daily updates.
