@@ -1,76 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <!-- Start Time Input -->
-
-    <!-- End Time Input -->
-
-    <!-- Time Picker -->
-
-    <!-- Frequency Options Spinner -->
-
-    <!-- Button to Set Alarm -->
-
-    <Button
-        android:id="@+id/btnStartTime"
-        android:layout_width="wrap_content"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="64dp"
-        android:layout_marginEnd="10dp"
-        android:text="@string/start_time"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toStartOf="@+id/btnEndTime"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/simpleTimePicker" />
+        android:padding="16dp">
 
-    <Button
-        android:id="@+id/btnEndTime"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
-        android:layout_marginEnd="40dp"
-        android:text="@string/end_time"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btnStartTime"
-        app:layout_constraintTop_toBottomOf="@+id/simpleTimePicker" />
+        <!-- Start Time Input -->
 
-    <TimePicker
-        android:id="@+id/simpleTimePicker"
-        android:layout_width="299dp"
-        android:layout_height="175dp"
-        android:layout_marginTop="44dp"
-        android:timePickerMode="spinner"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <!-- End Time Input -->
 
-    <Spinner
-        android:id="@+id/spinnerFrequency"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="156dp"
-        android:entries="@array/frequency_options"
-        android:padding="16dp"
-        android:spinnerMode="dropdown"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/simpleTimePicker" />
+        <!-- Time Picker -->
 
-    <Button
-        android:id="@+id/btnSetAlarm"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:text="@string/set_alarm"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinnerFrequency" />
+        <!-- Frequency Options Spinner -->
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <!-- Button to Set Alarm -->
+
+        <Button
+            android:id="@+id/btnStartTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="10dp"
+            android:text="@string/start_time"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/btnEndTime"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/simpleTimePicker" />
+
+        <Button
+            android:id="@+id/btnEndTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="40dp"
+            android:text="@string/end_time"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnStartTime"
+            app:layout_constraintTop_toBottomOf="@+id/simpleTimePicker" />
+
+        <TimePicker
+            android:id="@+id/simpleTimePicker"
+            android:layout_width="299dp"
+            android:layout_height="175dp"
+            android:layout_marginTop="44dp"
+            android:timePickerMode="spinner"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Spinner
+            android:id="@+id/spinnerFrequency"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="156dp"
+            android:entries="@array/frequency_options"
+            android:padding="16dp"
+            android:spinnerMode="dropdown"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/simpleTimePicker" />
+
+        <Button
+            android:id="@+id/btnSetAlarm"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="@string/set_alarm"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerFrequency" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
