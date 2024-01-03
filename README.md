@@ -6,7 +6,7 @@ The AlarmDiary app is a simple and efficient tool designed to help you maintain 
 
 ## Features
 
-- **Set Custom Alarms:** Configure alarms based on your preferred timings and frequencies.
+- **Set Custom Alarms:** Configure alarms based on your preferred timings and frequencies. Will be using Time Picker 
 - **Timely Reminders:** Receive notifications prompting you to add your work progress or daily updates.
 - **Interactive Diary:** Easily input your daily activities and accomplishments through a user-friendly text input prompt.
 - **Calendar Integration:** View compiled daily diaries in a calendar format, allowing you to reflect on your journey.
