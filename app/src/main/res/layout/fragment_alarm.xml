@@ -11,15 +11,6 @@
         android:padding="16dp">
 
         <!-- Start Time Input -->
-
-        <!-- End Time Input -->
-
-        <!-- Time Picker -->
-
-        <!-- Frequency Options Spinner -->
-
-        <!-- Button to Set Alarm -->
-
         <Button
             android:id="@+id/btnStartTime"
             android:layout_width="wrap_content"
@@ -34,6 +25,19 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/simpleTimePicker" />
 
+        <!-- X button for Start Time -->
+        <ImageView
+            android:id="@+id/btnCancelStartTime"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/ic_cancel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:visibility="invisible" />
+
+        <!-- End Time Input -->
         <Button
             android:id="@+id/btnEndTime"
             android:layout_width="wrap_content"
@@ -45,6 +49,18 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/btnStartTime"
             app:layout_constraintTop_toBottomOf="@+id/simpleTimePicker" />
+
+        <!-- Check button for End Time -->
+        <ImageView
+            android:id="@+id/btnCheckEndTime"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/ic_check"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:visibility="invisible" />
 
         <TimePicker
             android:id="@+id/simpleTimePicker"
