@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.Spinner
 import android.widget.TimePicker
 import android.widget.Toast
@@ -46,6 +47,7 @@ class AlarmFragment : Fragment() {
             highlightButton(btnStartTime)
             dimButton(btnEndTime)
             updatePickerTime()
+            showStartTimeButtons()
         }
 
         btnEndTime.setOnClickListener {
@@ -53,11 +55,26 @@ class AlarmFragment : Fragment() {
             highlightButton(btnEndTime)
             dimButton(btnStartTime)
             updatePickerTime()
+            showEndTimeButtons()
         }
 
         btnSetAlarm.setOnClickListener {
             setAlarm()
         }
+    }
+
+    private fun showStartTimeButtons() {
+        view?.findViewById<ImageView>(R.id.btnCheckStartTime)?.visibility = View.VISIBLE
+        view?.findViewById<ImageView>(R.id.btnCancelStartTime)?.visibility = View.VISIBLE
+        view?.findViewById<ImageView>(R.id.btnCheckEndTime)?.visibility = View.INVISIBLE
+        view?.findViewById<ImageView>(R.id.btnCancelEndTime)?.visibility = View.INVISIBLE
+    }
+
+    private fun showEndTimeButtons() {
+        view?.findViewById<ImageView>(R.id.btnCheckStartTime)?.visibility = View.INVISIBLE
+        view?.findViewById<ImageView>(R.id.btnCancelStartTime)?.visibility = View.INVISIBLE
+        view?.findViewById<ImageView>(R.id.btnCheckEndTime)?.visibility = View.VISIBLE
+        view?.findViewById<ImageView>(R.id.btnCancelEndTime)?.visibility = View.VISIBLE
     }
 
     private fun highlightButton(button: Button) {

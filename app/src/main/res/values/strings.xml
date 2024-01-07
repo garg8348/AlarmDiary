@@ -7,4 +7,6 @@
     <string name="start_time">Start Time:</string>
     <string name="save_task_list">Save Task List</string>
     <string name="Hint1">Input task list for upcoming date</string>
+    <string name="cancel_button_description">cancel_button_description</string>
+    <string name="check_button_description">check_button_description</string>
 </resources>
